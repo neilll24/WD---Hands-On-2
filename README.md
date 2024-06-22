@@ -60,17 +60,17 @@
 This website showcases a comprehensive array of creative elements, including 5 unique hero designs, each with its own distinct style and flair. Additionally, it offers 5 different static card layouts, providing a variety of elegant and functional options. Furthermore, the site features 5 innovative animated card designs, adding dynamic and interactive visual experiences. Altogether, these elements combine to present a versatile and rich collection for any design enthusiast.
 
 Guiding Question:
-- What is the project
+- What is the project - 
   5 hero pages, 5 static cards, and 5 animated cards. It showcases unique and engaging design theme.
-- Whats the purpose
+- Whats the purpose - 
   The purpose of this project is to provide a diverse and comprehensive collection of web design elements that can be used as a resource or inspiration for designers and developers. By     
   showcasing 5 unique hero designs, 5 different static card layouts, and 5 innovative animated card designs, the project aims to demonstrate various design possibilities and techniques. It 
   serves as a practical guide for creating visually appealing and functional web interfaces, helping users to enhance their skills, explore new ideas, and implement creative solutions in their 
   own projects.
-- What are key components
+- What are key components - 
   This project is a multipage website featuring sophisticated hover effects. It includes 5 distinct hero pages, each showcasing unique designs and styles. Additionally, the site presents 5 
   different static card layouts and 5 animated card designs, providing a variety of dynamic and visually engaging options for users to explore.
-- What technology used and how it is used
+- What technology used and how it is used - 
   HTML and CSS are scripting languages used to develop online pages and applications. HTML offers web page structure, but CSS is primarily used for web page styling.
 
 ### Key Components
