@@ -185,3 +185,4 @@ WD-ProjectName
 | Google | Icons, images, and backgrounds. | google.com |
 | Pinterest | Idea for Landing page, hero page, and card designs. | pinterest.com |
 | Youtube | Idea on how to create a good website | https://www.youtube.com/results?search_query=how+to+make+landing+page+vscode |
+| Deployment Link | Published site link | https://neilll24.github.io/WD---Hands-On-2/index.html |
