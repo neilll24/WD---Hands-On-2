@@ -1,0 +1,336 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    background-image: url('../img/cdgallerybg.jpg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+}
+
+
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header .nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.header .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.header .nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.header .nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: black;
+}
+
+/* Card Container */
+.static-cards, .animated-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px;
+    margin-top: 100px; /* Adjust for fixed header */
+}
+
+/* Static Card Designs */
+.static-card {
+    width: 300px;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.static-card .card-content {
+    text-align: center;
+}
+
+.static-card .card-header {
+    margin-bottom: 10px;
+}
+
+.static-card h2 {
+    margin-bottom: 10px;
+    color: #fdfdfd;
+}
+
+.static-card p {
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.static-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.static-card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.static-card .btn:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.static-card:nth-child(1) {
+    width: 200px; /* Adjust width for the first static card */
+}
+
+.static-card:nth-child(2) {
+    width: 320px; /* Adjust width for the second static card */
+}
+
+.static-card:nth-child(3) {
+    width: 500px; /* Adjust width for the third static card */
+}
+
+.static-card:nth-child(4) {
+    width: 150px; /* Adjust width for the fourth static card */
+}
+
+.static-card:nth-child(5) {
+    width: 250px; /* Adjust width for the fifth static card */
+}
+.static-card:nth-of-type(1) {
+    background-color: #db3a3f; /* Background color for the first static card */
+}
+
+.static-card:nth-of-type(2) {
+    background-color: #5f595b; /* Background color for the second static card */
+}
+
+.static-card:nth-of-type(3) {
+    background-color: #c3800d; /* Background color for the third static card */
+}
+
+.static-card:nth-of-type(4) {
+    background-color: #2a2828; /* Background color for the fourth static card */
+}
+
+.static-card:nth-of-type(5) {
+    background-color: #c5cae9; /* Background color for the fifth static card */
+}
+
+
+/* Animated Card Designs */
+.animated-card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.animated-card .card-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.animated-card .card-front,
+.animated-card .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Card 1 */
+.animated-card.anim-1 .card-inner {
+    transform: rotateY(0deg);
+}
+
+.animated-card.anim-1:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.animated-card.anim-1 .card-front {
+    transform: rotateY(0deg);
+}
+
+.animated-card.anim-1 .card-back {
+    transform: rotateY(180deg);
+    background-color: #333;
+    color: #fff;
+}
+
+/* Card 2 */
+.animated-card.anim-2 .card-inner {
+    transform: rotateX(0deg);
+}
+
+.animated-card.anim-2:hover .card-inner {
+    transform: rotateX(180deg);
+}
+
+.animated-card.anim-2 .card-front {
+    transform: rotateX(0deg);
+}
+
+.animated-card.anim-2 .card-back {
+    transform: rotateX(180deg);
+    background-color: #4d4d4d;
+    color: #fff;
+}
+
+/* Card 3 */
+.animated-card.anim-3 .card-inner {
+    transform: rotateY(0deg) rotateX(0deg);
+}
+
+.animated-card.anim-3:hover .card-inner {
+    transform: rotateY(180deg) rotateX(180deg);
+}
+
+.animated-card.anim-3 .card-front {
+    transform: rotateY(0deg) rotateX(0deg);
+}
+
+.animated-card.anim-3 .card-back {
+    transform: rotateY(180deg) rotateX(180deg);
+    background-color: #645d5d;
+    color: #fff;
+}
+
+/* Card 4 */
+.animated-card.anim-4 .card-inner {
+    transform-origin: center center;
+    transform: scale(1);
+}
+
+.animated-card.anim-4:hover .card-inner {
+    transform: scale(1.1);
+}
+
+.animated-card.anim-4 .card-front {
+    transform: scale(1);
+}
+
+.animated-card.anim-4 .card-back {
+    transform: scale(1);
+    background-color: #e88be7;
+    color: #fff;
+}
+
+/* Card 5 */
+.animated-card.anim-5 .card-inner {
+    transform: translateX(0);
+}
+
+.animated-card.anim-5:hover .card-inner {
+    transform: translateX(100%);
+}
+
+.animated-card.anim-5 .card-front {
+    transform: translateX(0);
+}
+
+.animated-card.anim-5 .card-back {
+    transform: translateX(-100%);
+    background-color: #bbb;
+    color: #fff;
+}
+
+.animated-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.animated-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+.animated-card:hover .overlay {
+    opacity: 1;
+}
+
+.animated-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.animated-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.animated-card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.animated-card .btn:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
